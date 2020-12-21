@@ -68,4 +68,4 @@ for instruction in data:
         position[0] += waypoint[0] * amount
         position[1] += waypoint[1] * amount
 
-print("Part 2: manhattan distance travelled = {}".format(abs(position[0]) + abs(position[1]))
+print("Part 2: manhattan distance travelled = {}".format(abs(position[0]) + abs(position[1])))

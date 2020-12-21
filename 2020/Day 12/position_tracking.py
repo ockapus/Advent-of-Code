@@ -40,7 +40,6 @@ waypoint = [1, 10]
 for instruction in data:
     command = instruction[0:1]
     amount = int(instruction[1:])
-    #print("Command: {} {} \n -> start waypoint {}, {} | start position {}, {}".format(command, amount, waypoint[0], waypoint[1], position[0], position[1]))
     # If our command is a direction, we move the waypoint the amount given
     if command in direction:
         waypoint[0] += movement[direction[command]][0] * amount
@@ -68,7 +67,5 @@ for instruction in data:
     else:
         position[0] += waypoint[0] * amount
         position[1] += waypoint[1] * amount
-    #print(" -> final waypoint {}, {} | final position {}, {}".format(waypoint[0], waypoint[1], position[0], position[1]))
 
-print("Part 2: manhattan distance travelled = {}".format(abs(position[0]) + abs(position[1])))
-    
+print("Part 2: manhattan distance travelled = {}".format(abs(position[0]) + abs(position[1]))
